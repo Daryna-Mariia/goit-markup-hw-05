@@ -47,7 +47,7 @@
                 <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
             </div>
             <div class="container hero-box-btn">
-                <button class="hero-btn" type="button">Замовити послугу</button>
+                <button class="hero-btn"  type="button" data-modal-open>Замовити послугу</button>
             </div>
             </section>
        
@@ -101,13 +101,22 @@
                 <h2 class="work-line">Чим ми займаємося</h2>
                 <ul class="work-sample list">
                 <li class="work-img-example">
+                    <div class="work-img-wrapper">
                     <img class="img-example" src="./images/coding.jpg" alt="Людина кодить" width="370" height="294"/> 
+                    <p class="our-work-overlay">десктопні додатки</p>
+                </div>
                 </li>
                 <li class="work-img-example">
+                    <div class="work-img-wrapper">
                     <img class="img-example" src="./images/mobile.jpg" alt="Людина підбирає дизайн для мобайлу" width="370" height="294"/>
+                    <p class="our-work-overlay">мобільні додатки</p>
+                </div>
                 </li>
                 <li class="work-img-example">
+                    <div class="work-img-wrapper">
                     <img class="img-example" src="./images/color.jpg" alt="Людина підбирає кольори" width="370" height="294"/>
+                    <p class="our-work-overlay">дизайнерські рішення</p>
+                </div>
                 </li>
                 </ul>
             </div>
@@ -355,7 +364,7 @@
                 <li class="footer-social-items">
                     <a href="" class="footer-link-item">
                         <svg lang="en" aria-label= "twitter icon" class="footer-social-icon">
-                            <use href="./images/sprite.svg#icon-twitterfooter"></use>
+                            <use href="./images/spritenew.svg#icon-twitter-footer"></use>
                         </svg>
                     </a>
                 </li>
@@ -377,5 +386,15 @@
         </div>
     </div>
             </footer>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button type="button" class="modal-close-bt" data-modal-close>
+                        <svg  aria-label="іконка закриття" class="icon-close-modal"  width="18" height="18">
+                            <use href="./images/spritenew.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <script src="./js/modal.js"></script>
 </body>
 </html>
